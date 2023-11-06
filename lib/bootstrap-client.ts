@@ -1,6 +1,6 @@
 export function bootstrap() {
   console.log(`
-  Welcome to the domain of
+  Welcome to the personal website of
 
   ██╗  ██╗ █████╗ ██╗   ██╗██╗  ██╗  ███╗   ███╗ █████╗ ██████╗ ████████╗██╗██████╗  █████╗  ██████╗
   ██║  ██║██╔══██╗╚██╗ ██╔╝██║ ██╔╝  ████╗ ████║██╔══██╗██╔══██╗╚══██╔══╝██║██╔══██╗██╔══██╗██╔════╝

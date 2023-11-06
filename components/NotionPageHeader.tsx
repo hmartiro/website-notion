@@ -28,7 +28,11 @@ const ToggleThemeButton = () => {
       className={cs('breadcrumb', 'button', !hasMounted && styles.hidden)}
       onClick={onToggleTheme}
     >
-      {hasMounted && isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
+      {hasMounted && isDarkMode ? (
+        <IoMoonSharp style={{ fontSize: '1.5em' }} />
+      ) : (
+        <IoSunnyOutline style={{ fontSize: '1.7em' }} />
+      )}
     </div>
   )
 }
@@ -45,7 +49,8 @@ export const NotionPageHeader: React.FC<{
   return (
     <header className='notion-header'>
       <div className='notion-nav-header'>
-        <Breadcrumbs block={block} rootOnly={true} />
+        {false && <Breadcrumbs block={block} rootOnly={true} />}
+        <div />
 
         <div className='notion-nav-header-rhs breadcrumbs'>
           {navigationLinks
