@@ -35,7 +35,7 @@ export const FooterImpl: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}>Copyright 2022 {config.author}</div>
+      {/* <div className={styles.copyright}>Copyright 2022 {config.author}</div> */}
 
       <div className={styles.settings}>
         {hasMounted && (
@@ -87,7 +87,7 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.github && (
+        {false && config.github && (
           <a
             className={styles.github}
             href={`https://github.com/${config.github}`}
@@ -99,7 +99,7 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
-        {config.linkedin && (
+        {false && config.linkedin && (
           <a
             className={styles.linkedin}
             href={`https://www.linkedin.com/in/${config.linkedin}`}
